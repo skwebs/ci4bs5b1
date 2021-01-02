@@ -12,9 +12,10 @@
 
     
 
+    <link href="./assets/vendors/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
-<link href="<?= base_url(); ?>/assets/venders/bootstrap/5.0.0-beta1/bootstrap.min.css" rel="stylesheet">
-<link href="<?= base_url(); ?>/assets/venders/bootstrap/bs5a-reset/bs5a2-remove.css" rel="stylesheet">
+<link href="./assets/vendors/bootstrap/5.0.0-beta1/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/vendors/bootstrap/bs5a-reset/bs5a2-remove.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -33,9 +34,10 @@
     </style>
 
     
+    <link href="./assets/vendors/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="<?= base_url(); ?>/assets/css/offcanvas.css?0" rel="stylesheet">
-  <link href="<?= base_url(); ?>/assets/css/base-layout.css?00" rel="stylesheet">
+    <link href="./assets/css/offcanvas.css?0" rel="stylesheet">
+  <link href="./assets/css/base-layout.css?hhh" rel="stylesheet">
   
   </head>
   <body class="bg-light">
@@ -186,13 +188,47 @@
     </small>
   </div>
 </main>
-<footer>
-</footer>
-<script src="<?= base_url(); ?>/assets/venders/jquery/3.5.1/jquery.min.js"></script>
-  
-    <script src="<?= base_url(); ?>/assets/venders/bootstrap/5.0.0-beta1/bootstrap.bundle.min.js"></script>
 
-      <script src="<?= base_url(); ?>/assets/js/offcanvas.js"></script>
+<footer class="bg-dark footer text-muted">
+  <!-- footer social icons section -->
+  <section class="footer__social py-1 bg-primary">
+    <div class="footer__social_icon container d-flex justify-content-center align-items-center">
+      <ul class="d-none d-md-flex text-white">
+        <li>Follow us on :</li>
+      </ul>
+      <ul>
+        <li class="fb flat-icon wow animate__fadeInLeftBig" data-wow-delay=".3s"><a href="https://fb.com/skwebsofficial/"><i class="fa fa-facebook"></i></a></li>
+        <li class="tw flat-icon wow animate__fadeInLeftBig" data-wow-delay="0"><a href="https://twitter.com/SatishKmrSharma/"><i class="fa fa-twitter"></i></a></li>
+        <li class="ig flat-icon wow animate__fadeInRightBig" data-wow-delay="0"><a href="https://instagram.com/satishkmrsharma/"><i class="fa fa-instagram"></i></a></li>
+        <li class="yt flat-icon wow animate__fadeInRightBig" data-wow-delay="0.3s"><a href="#"><i class="fa fa-youtube"></i></a></li>
+      </ul>
+    </div>
+  </section>
+  <section class="footer-links">
+    <div class="p-3">&nbsp;
+      <a href="#">Student Panel</a> |
+      <a href="#">Teacher Panel</a> |
+      <a href="#">Admin Panel</a> |
+      <a href="#">Privacy-Policy</a> |
+      <a href="#">Disclaimer</a> |
+      <a href="#">Terms & Conditions</a>
+    </div>
+  </section>
+  <!-- // footer social icons section -->
+  <!-- copyright section -->
+  <section class="copyright my-auto py-2 py-md-3  text-center"> &copy;
+    <script>
+      document.write(new Date().getFullYear())
+    </script> <a class="text-lightgrey" href="./"><strong>Anshu Memorial Academy</strong>. </a><span class="d-none d-md-inline mr-5"> All Right Reserved. </span>
+    <hr style="max-width:300px;" class="bg-muted my-1 w-50 mx-auto d-md-none"> <span class="d-block d-md-inline"> Designed &amp; Developed by <a href="https://skwebs.github.io">SKWebs</a></span> </section>
+  <!-- // copyright section -->
+</footer>
+
+<script src="./assets/vendors/jquery/3.5.1/jquery.min.js"></script>
+  
+    <script src="./assets/vendors/bootstrap/5.0.0-beta1/bootstrap.bundle.min.js"></script>
+
+      <script src="./assets/js/offcanvas.js"></script>
       
       <script>
       // Look for .hamburger

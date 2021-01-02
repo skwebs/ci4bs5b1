@@ -202,8 +202,8 @@ a:active{
 |==============================================================================
 */
 body {
-   isplay: flex !important;
-   fex-direction: column !important;
+   display: flex !important;
+   flex-direction: column !important;
 }
 
 /*main {
@@ -223,7 +223,7 @@ body {
 header,
 main,
 footer {
-   overflow-x: hidden;
+   verflow-x: hidden;
    overflow-y: auto;
    /*flex: flex-grow, flex-shrink, flex-basic;*/
    /*
@@ -235,6 +235,8 @@ footer {
 
 main {
    flex-grow: 1 !important;
+/* custom */
+display:block !important;
 }
 
 .cta {
@@ -459,7 +461,7 @@ main {
 .copyright {
    background: rgba(0, 0, 0, .15);
 }
-/*
+
 .footer__social_icon {
    flex-direction: row;
    color: grey;
@@ -524,7 +526,7 @@ main {
    font-weight: bold;
    transform: translateX(3px);
 }
-*/
+
 
 
 

@@ -1,0 +1,588 @@
+/*
+|=================================================
+| Indexed [added following css]
+|=================================================
+| * style.css
+| * stk-ftr-in-btm.css
+| * nav.css
+| * sidebar.css
+| * footer.css
+| * preloader.css
+|=================================================
+*/
+
+
+/*
+|==============
+| * global
+|==============
+*/
+:root {
+   --darkblue: #1a237e;
+   --hamburger-color:#aaa; // #0275d8;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+/*
+|==============
+| * body
+|==============
+*/
+body,
+html {
+   width: 100%;
+   height: 100%;
+}
+
+body {
+   font-family: panton_regular;
+}
+
+
+/*
+|==============================================================================
+| * style.css 
+|==============================================================================
+*/
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+a:active{
+	text-decoration:link;
+}
+/*
+.bg-black-op75 {
+   background: rgba(0, 0, 0, 0.75);
+}
+
+.bg-white-op75 {
+   background: hsla(0, 0%, 100%, 0.75);
+}
+
+@media (min-width: 768) {
+   .w-md-25 {
+      width: 25% !important;
+   }
+
+   .small-md {
+      font-size: 0.875em;
+   }
+}
+
+.panton-r {
+   font-family: panton_regular;
+}
+
+.panton-sb {
+   font-family: panton_semibold;
+}
+
+.panton-b {
+   font-family: panton_bold;
+}
+
+.panton-eb {
+   font-family: panton_extrabold;
+}
+*/
+.text-indigo {
+   color: var(--bs-indigo);
+}
+
+.text-purple {
+   color: var(--bs-purple);
+}
+
+.text-orange {
+   color: var(--bs-orange);
+}
+
+.text-teal {
+   color: var(--bs-teal);
+}
+
+.text-pink {
+   color: var(--bs-pink);
+}
+
+.text-darkblue {
+   color: var(--bs-darkblue);
+}
+
+.bg-indigo {
+   background-color: var(--bs-indigo);
+}
+
+.bg-purple {
+   background-color: var(--bs-purple);
+}
+
+.bg-orange {
+   background-color: var(--bs-orange);
+}
+
+.bg-teal {
+   background-color: var(--bs-teal);
+}
+
+.bg-pink {
+   background-color: var(--bs-pink);
+}
+
+.bg-darkblue {
+   background: var(--bs-darkblue);
+}
+
+.purple-grad {
+   background: -webkit-gradient(linear,
+         left top,
+         right bottom,
+         from(#fff),
+         to(#9ebfde));
+   background: linear-gradient(to right bottom, #fff, #9ebfde);
+}
+
+.filter-gray {
+   filter: grayscale(100%);
+}
+/*
+.opacity25 {
+   opacity: 0.25;
+}
+
+.vis-hid {
+   visibility: hidden;
+}
+
+.vis-vis {
+   visibility: visible;
+}
+
+/* height *
+.vh-100 {
+   height: 100vh;
+}
+
+.vh-75 {
+   height: 75vh;
+}
+
+.text-justify {
+   text-align: justify !important;
+}
+
+.bg-darkblue {
+   background: #1a237e;
+}
+
+.text-darkblue {
+   color: #1a237e;
+}
+
+.is-sticky{
+-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25) !important;
+ }
+
+
+
+
+
+
+/*
+|==============================================================================
+| * stk-ftr-in-btm.css 
+|==============================================================================
+*/
+body {
+   isplay: flex !important;
+   fex-direction: column !important;
+}
+
+/*main {
+	/* By setting flex-grow to 1, the main content will take up 
+	all of the remaining space on the page (the other elements have flex-grow: 0 and won't contest the free space). */
+/* 1 flex-grow, 0 flex-shrink, auto flex-basis *
+	flex: 1 0 auto !important;
+	}
+	
+	header,footer {
+	/* We want the header to have a static height - it will always take up just as much space as it needs.  */
+/* 0 flex-grow, 0 flex-shrink, auto flex-basis *
+	flex: 0 0 auto !important;
+	}
+	*/
+
+header,
+main,
+footer {
+   overflow-x: hidden;
+   overflow-y: auto;
+   /*flex: flex-grow, flex-shrink, flex-basic;*/
+   /*
+	set flex-grow: 1; for main only and flex-grow:0; for header and footer
+	flex-shrink :0; and flex-basic: auto; for header, footer and, main
+	*/
+   flex: 0 0 auto;
+}
+
+main {
+   flex-grow: 1 !important;
+}
+
+.cta {
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), 50%), url("https://anshumemorial.in/test/m/assets/img/web/laptop1.jpg") fixed center 100%/cover
+}
+
+.copyright {
+   background: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+|==============================================================================
+| * nav.css 
+|==============================================================================
+*/
+
+.hamburger {
+   padding: 10px;
+   display: inline-block;
+   cursor: pointer;
+   -webkit-transition-property: opacity, -webkit-filter;
+   transition-property: opacity, -webkit-filter;
+   transition-property: opacity, filter;
+   transition-property: opacity, filter, -webkit-filter;
+   -webkit-transition-duration: 0.15s;
+   transition-duration: 0.15s;
+   -webkit-transition-timing-function: linear;
+   transition-timing-function: linear;
+   font: inherit;
+   color: inherit;
+   text-transform: none;
+   background-color: transparent;
+   border: 0;
+   margin: 0;
+   overflow: visible;
+}
+
+/*.hamburger:hover {
+	opacity: 0.7; 
+	}
+	.hamburger.is-active:hover {
+	opacity: 0.7; 
+	}*/
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+   background-color: var(--hamburger-color);
+}
+
+.hamburger-box {
+   width: 24px;
+   height: 12px;
+   display: inline-block;
+   position: relative;
+}
+
+.hamburger-inner {
+   display: block;
+   top: 50%;
+   margin-top: 0px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+   width: 24px;
+   height: 2px;
+   background-color: var(--hamburger-color);
+   border-radius: 4px;
+   position: absolute;
+   -webkit-transition-property: -webkit-transform;
+   transition-property: -webkit-transform;
+   transition-property: transform;
+   transition-property: transform, -webkit-transform;
+   -webkit-transition-duration: 0.15s;
+   transition-duration: 0.15s;
+   -webkit-transition-timing-function: ease;
+   transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+   content: "";
+   display: block;
+}
+
+.hamburger-inner::before {
+   top: -8px;
+}
+
+.hamburger-inner::after {
+   bottom: -8px;
+}
+
+/*
+	For more design go - https://github.com/jonsuh/hamburgers/blob/master/dist/hamburgers.css
+	*/
+
+/* Arrow Alt */
+.hamburger--arrowalt .hamburger-inner::before {
+   -webkit-transition: top 0.1s 0.1s ease,
+      -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+   transition: top 0.1s 0.1s ease,
+      -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+   transition: top 0.1s 0.1s ease,
+      transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+   transition: top 0.1s 0.1s ease,
+      transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1),
+      -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hamburger--arrowalt .hamburger-inner::after {
+   -webkit-transition: bottom 0.1s 0.1s ease,
+      -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+   transition: bottom 0.1s 0.1s ease,
+      -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+   transition: bottom 0.1s 0.1s ease,
+      transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+   transition: bottom 0.1s 0.1s ease,
+      transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1),
+      -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hamburger--arrowalt.is-active .hamburger-inner::before {
+   top: 0;
+   /*transform: translate3d(-8px, -10px, 0) rotate(-45deg) scale(0.7, 1);*/
+   -webkit-transform: translate3d(-6px, -5.5px, 0) rotate(-45deg) scale(0.7, 1);
+   transform: translate3d(-6px, -5.5px, 0) rotate(-45deg) scale(0.7, 1);
+   -webkit-transition: top 0.1s ease,
+      -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+   transition: top 0.1s ease,
+      -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+   transition: top 0.1s ease,
+      transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+   transition: top 0.1s ease,
+      transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22),
+      -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.hamburger--arrowalt.is-active .hamburger-inner::after {
+   bottom: 0;
+   /*transform: translate3d(-8px, 10px, 0) rotate(45deg) scale(0.7, 1);*/
+   -webkit-transform: translate3d(-6px, 5.5px, 0) rotate(45deg) scale(0.7, 1);
+   transform: translate3d(-6px, 5.5px, 0) rotate(45deg) scale(0.7, 1);
+   -webkit-transition: bottom 0.1s ease,
+      -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+   transition: bottom 0.1s ease,
+      -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+   transition: bottom 0.1s ease,
+      transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+   transition: bottom 0.1s ease,
+      transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22),
+      -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+/*
+   * Elastic
+   */
+.hamburger--elastic .hamburger-inner {
+  top: -2px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  .hamburger--elastic .hamburger-inner::before {
+    top: 8px;
+    transition: opacity 0.125s 0.275s ease; }
+  .hamburger--elastic .hamburger-inner::after {
+    top: 16px;
+    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.hamburger--elastic.is-active .hamburger-inner {
+  transform: translate3d(0, 8px, 0) rotate(135deg);
+  transition-delay: 0.075s; }
+  .hamburger--elastic.is-active .hamburger-inner::before {
+    transition-delay: 0s;
+    opacity: 0; }
+  .hamburger--elastic.is-active .hamburger-inner::after {
+    transform: translate3d(0, -16px, 0) rotate(-270deg);
+    transition-delay: 0.075s; }
+    
+    
+.navbar-brand img {
+   height: 30px !important;
+   transform:scale(1.4);
+}
+
+.dropdown-menu {
+   min-width: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+|==============================================================================
+| * footer.css 
+|==============================================================================
+*/
+
+.copyright {
+   background: rgba(0, 0, 0, .15);
+}
+/*
+.footer__social_icon {
+   flex-direction: row;
+   color: grey;
+}
+
+.footer__social_icon ul {
+   margin: 0 5px;
+   padding: 0;
+   display: flex;
+}
+
+.footer__social_icon ul li {
+   list-style: none;
+   margin: 0 5px;
+}
+
+.footer__social_icon ul li a {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   overflow: hidden;
+   border-radius: 50%;
+   text-decoration: none;
+   font-size: 1.25rem;
+   color: #fff;
+   transition: all .5s;
+}
+
+.footer__social_icon ul li a .fa {
+   transition: .5s;
+}
+
+.footer__social_icon ul li a:hover {
+   -webkit-mask-image: none;
+   -webkit-box-shadow: 0px 1px 1.5px 1px rgba(0, 0, 0, 0.12);
+   box-shadow: 0px 1px 1.5px 1px rgba(0, 0, 0, 0.12);
+}
+
+.footer__social_icon ul li a:hover .fa {
+   color: #fff;
+   transform: scale(.85);
+}
+
+.footer-links a {
+   margin: 2px;
+   display: inline-block;
+   color: var(--bs-gray);
+   text-decoration: none;
+   transition: .5s;
+}
+
+.footer-links a:hover {
+   color: #aaa;
+   text-decoration: underline;
+}
+
+.footer__links a:hover {
+   color: #fff;
+   font-weight: bold;
+   transform: translateX(3px);
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+|==============================================================================
+| * preloader.css 
+|==============================================================================
+*
+
+.preloader {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: 9999;
+   background: #fff;
+   display: flex;
+   filter: grayscale(100%);
+   justify-content: center;
+   align-items: center;
+}
+
+.preloader__img {
+   box-shadow: 0 0 5px 5px #eee;
+   max-width: 128px;
+   opacity: .1;
+   z-index: 2;
+}
+
+.preloader .rounder {
+   position: fixed;
+   background: transparent;
+   width: 150px;
+   height: 150px;
+   border: 5px dotted #ddd;
+   border-bottom-color: #fff;
+   border-radius: 50%;
+   animation: rotate 1.75s linear infinite;
+}
+
+@keyframes rotate {
+   0% {
+      transform: rotate(0);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+*/
